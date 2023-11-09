@@ -3,8 +3,8 @@ import './CannonBall.css';
 
 
 const Barrelexplosion = ({ position }) => {
-    const centerX = window.innerWidth / 2 - 50; // Assuming 100px width, adjust as needed
-    const centerY = window.innerHeight / 2 - 50; // Assuming 100px height, adjust as needed
+    const centerX = window.innerWidth / 2 - 50;
+    const centerY = window.innerHeight / 2 - 50;
 
     return (
         <div
@@ -13,9 +13,9 @@ const Barrelexplosion = ({ position }) => {
                 position: 'absolute',
                 top: centerY,
                 left: centerX,
-                width: '100px', // Adjust as needed
-                height: '100px', // Adjust as needed
-                backgroundColor: '#ff4500', // Adjust the color
+                width: '100px', 
+                height: '100px', 
+                backgroundColor: '#ff4500', 
                 borderRadius: '50%',
             }}
         />

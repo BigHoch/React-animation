@@ -1,6 +1,4 @@
-.App {
-  /* Add any additional styles for your App component */
-}
+.App {}
 
 .fire-button {
   position: absolute;
@@ -8,26 +6,25 @@
   right: 1200px;
   padding: 10px 20px;
   background-color: #704d03;
-  /* Corndog color, adjust as needed */
+
   border: 2px solid #704d03;
-  /* Adjust border color */
+
   border-radius: 15px;
-  /* Adjust border-radius for a rounded look */
+
   color: #704d03;
-  /* Text color, adjust as needed */
+
   font-size: 16px;
-  /* Adjust font size */
+
   cursor: pointer;
   transition: background-color 0.3s ease;
-  /* Smooth transition for background color */
 
-  /* Optional: Add a box shadow for depth */
+
+
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
-  /* Optional: Hover effect */
+
   &:hover {
     background-color: #e0aa00;
-    /* Adjust hover background color */
 
   }
 }
@@ -37,9 +34,9 @@ img {
   margin: 2px;
 }
 
-/* .bg {
+.bg {
   background-image: url(./images/1.jpg);
-  width: 1800px;
-  height: 600px;
+  width: 1700px;
+  height: 1000px;
   background-size: cover;
-} */
+}

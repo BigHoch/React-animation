@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import './CannonBall.css'; // Import the correct CSS file here
-import Explosion from './Explosion'; // Import the original Explosion component
+import './CannonBall.css'; 
+import Explosion from './Explosion'; 
 import BarrelExplosion from './BarrelExplosion';
 
 const Cannonball = ({ fired }) => {
@@ -20,7 +20,7 @@ const Cannonball = ({ fired }) => {
                 setAnimationComplete(true);
             }
         },
-        config: { duration: 1000 }, // Adjust the duration as needed
+        config: { duration: 1000 },
     });
 
     return (

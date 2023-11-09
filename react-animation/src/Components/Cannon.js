@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import './Cannon.css'; // Import the correct CSS file here
+import './Cannon.css'; //
 
 
 const Cannon = () => {

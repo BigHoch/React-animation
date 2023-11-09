@@ -1,9 +1,9 @@
 .cannon-container {
     position: absolute;
-    top: 70%; /* Center the container vertically */
-    left: 10%; /* Center the container horizontally */
-    transform: translate(-50%, -50%) rotate(90deg); /* Rotate the container by 35 degrees to point towards the top right */
-    transform-origin: bottom left; /* Set the rotation origin to the bottom left corner */
+    top: 70%; 
+    left: 10%; 
+    transform: translate(-50%, -50%) rotate(90deg); 
+    transform-origin: bottom left; 
   }
   
   .cannon {
@@ -18,10 +18,10 @@
   .wheel {
     width: 120px;
     height: 120px;
-    background-color: #858585; /* Adjust the color as needed */
+    background-color: #858585;
     border-radius: 50%;
     position: absolute;
-    top: 40%; /* Adjust the vertical position as needed */
-    left: 170px; /* Adjust the horizontal position as needed */
+    top: 40%; 
+    left: 170px; 
     transform: translate(-50%, -50%);
   }

@@ -2,65 +2,53 @@
     width: 30px;
     height: 80px;
     background-color: #704d03;
-    /* Adjust the color to match the corndog color */
+   
     border-radius: 50%;
     position: absolute;
     top: 700px;
-    /* Initial vertical position */
+   
     left: 200px;
-    /* Initial horizontal position */
+   
     opacity: 0;
-    /* Set initial opacity to 0 */
+  
     transition: transform 1.3s ease, opacity 0.1s ease;
-    /* Smooth transition for both transform and opacity */
+   
     transform: rotate(-180deg);
-    /* Rotate the cannonball slightly clockwise */
+ 
 }
 
 .cannonball::before {
     content: '';
     width: 4px;
-    /* Adjust as needed for the stick width */
     height: 60px;
-    /* Adjust as needed for the stick length */
     background-color: #704d03;
-    /* Adjust the color for the stick */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    /* Center the stick horizontally */
     transform-origin: top center;
-    /* Rotate from the top center */
     border-radius: 2px;
-    /* Adjust as needed */
+
 }
 
 .cannonball.fired {
     transform: translateY(-600px) translateX(600px);
-    /* Spin the corndog while fired */
     opacity: 1;
-    /* Make the corndog visible when fired */
-    /* Apply a continuous spinning animation */
 }
 
 .explosion {
     width: 300px;
     height: 300px;
     background-color: #ff2600;
-    /* Adjust the color to match the explosion color */
+
     border-radius: 50%;
     position: absolute;
     top: 20px;
-    /* Adjust the vertical position */
     left: 670px;
-    /* Adjust the horizontal position */
     opacity: 0;
-    /* Set initial opacity to 0 */
     transform: scale(0);
-    /* Set initial scale to 0 for a growing effect */
     transition: transform 0.5s ease, opacity 0.5s ease;
-    /* Smooth transition for both transform and opacity */
+
 }
 
 
@@ -76,7 +64,7 @@
     border-radius: 50%;
     position: absolute;
     top: 50px;
-    left: 200px; /* Adjust the horizontal position */
+    left: 200px; 
     opacity: 0;
     transform: scale(0);
     transition: transform 0.5s ease, opacity 0.5s ease;
