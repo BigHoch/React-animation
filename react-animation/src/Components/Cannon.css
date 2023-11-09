@@ -1,0 +1,27 @@
+.cannon-container {
+    position: absolute;
+    top: 70%; /* Center the container vertically */
+    left: 10%; /* Center the container horizontally */
+    transform: translate(-50%, -50%) rotate(90deg); /* Rotate the container by 35 degrees to point towards the top right */
+    transform-origin: bottom left; /* Set the rotation origin to the bottom left corner */
+  }
+  
+  .cannon {
+    width: 160px; 
+    height: 80px; 
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: 100% 50%;
+    transform: rotate(-25deg); 
+  }
+
+  .wheel {
+    width: 120px;
+    height: 120px;
+    background-color: #858585; /* Adjust the color as needed */
+    border-radius: 50%;
+    position: absolute;
+    top: 40%; /* Adjust the vertical position as needed */
+    left: 170px; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%);
+  }

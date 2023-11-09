@@ -1,33 +1,22 @@
 import React, { useState } from 'react';
-import { useSpring, animated } from '@react-spring/web';
+import Cannon from './Components/Cannon';
+import Cannonball from './Components/CannonBall';
+import './App.css'; 
+
 
 function App() {
-  const [isMoved, setIsMoved] = useState(false);
+  const [fired, setFired] = useState(false);
 
-  const moveAnimation = useSpring({
-    transform: isMoved ? 'translateX(100px)' : 'translateX(0)',
-  });
-
-  const handleButtonClick = () => {
-    setIsMoved(!isMoved);
+  const handleFire = () => {
+    setFired(true);
   };
 
   return (
     <div className="App">
-      <h1>React Spring Animation</h1>
-      <animated.div
-        style={{
-          width: '100px',
-          height: '100px',
-          background: 'lightblue',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          ...moveAnimation,
-        }}
-      >
-        <button onClick={handleButtonClick}>Move Me</button>
-      </animated.div>
+      <div className="bg"></div>
+      <button className="fire-button" onClick={handleFire}>Corndog</button>
+      <Cannon />
+      <Cannonball fired={fired} />
     </div>
   );
 }
